@@ -5,8 +5,6 @@
 * Browsers: last 4 version
 */
 
-@import "fonts.css";
-
 $bebas: 'Bebas Neue', cursive;
 $openSans: 'Open Sans', sans-serif;
 $white: #ffffff;
@@ -309,7 +307,6 @@ b, li > a:hover, .scroll-down:hover {
   }
 }
 
-
 .screen {
   position: relative;
 }
@@ -324,6 +321,7 @@ b, li > a:hover, .scroll-down:hover {
   display: flex;
   @media all and (max-width: $mobileWidth) {
     padding-top: 40px + $headerHeight;
+    background-attachment: unset;
   }
 
   .container {
