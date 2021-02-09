@@ -57,7 +57,7 @@ function toggleActiveLink(ev) {
 window.onload = () => {
     setPos(header, nav)
     setFixedOnScroll(header)
-    hidePreloader()
+
 }
 window.onresize = () => {
     setPos(header, nav)
@@ -65,9 +65,10 @@ window.onresize = () => {
 window.onscroll = () => {
     setFixedOnScroll(header)
 }
-window.onclick = (ev) => {
+document.onclick = (ev) => {
     hideNav(ev)
     toggleActiveLink(ev)
 
 }
+
 
