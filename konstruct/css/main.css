@@ -19,7 +19,8 @@
   scroll-behavior: smooth;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
-  transition: 0.2s ease; }
+  transition: 0.2s ease;
+  border-radius: 0; }
 
 input, label, button {
   cursor: pointer; }
@@ -278,8 +279,10 @@ b, li > a:hover, .scroll-down:hover {
   text-transform: uppercase; }
 
 .main-title {
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
   font-family: "Bebas Neue", cursive;
-  font-weight: 500;
   font-size: 60px;
   letter-spacing: 5.70937px;
   text-align: center; }
@@ -478,9 +481,9 @@ b, li > a:hover, .scroll-down:hover {
       margin-bottom: 20px; }
       @media all and (max-width: 520px) {
         .screen-3 .row-2 .col {
-          width: 100%; } }
+          width: 100%;
+          min-width: 240px; } }
     .screen-3 .row-2 .cart {
-      min-width: 295px;
       height: 100%;
       padding: 40px 20px;
       border: 1px solid #E6E6E6; }
@@ -618,9 +621,10 @@ b, li > a:hover, .scroll-down:hover {
       @media all and (max-width: 390px) {
         .footer .footer-row-1 label {
           width: 100%;
-          margin-bottom: 15px; }
-          .footer .footer-row-1 label input {
-            width: 100%; } }
+          margin-bottom: 15px; } }
+    @media all and (max-width: 390px) {
+      .footer .footer-row-1 input, .footer .footer-row-1 .link-btn {
+        width: 100%; } }
   .footer .footer-row-2 {
     padding: 40px 0;
     background: #141A20; }

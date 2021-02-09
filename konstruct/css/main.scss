@@ -29,6 +29,7 @@ $mobileWidth: 520px;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
+  border-radius: 0;
 }
 
 input, label, button {
@@ -371,8 +372,11 @@ b, li > a:hover, .scroll-down:hover {
 }
 
 .main-title {
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
   font-family: $bebas;
-  font-weight: 500;
+  //font-weight: 500;
   font-size: 60px;
   letter-spacing: 5.70937px;
   text-align: center;
@@ -627,11 +631,11 @@ b, li > a:hover, .scroll-down:hover {
       margin-bottom: 20px;
       @media all and (max-width: $mobileWidth) {
         width: 100%;
+        min-width: 240px;
       }
     }
 
     .cart {
-      min-width: 295px;
       height: 100%;
       padding: 40px 20px;
       border: 1px solid #E6E6E6;
@@ -807,10 +811,13 @@ b, li > a:hover, .scroll-down:hover {
       @media all and (max-width: 390px) {
         width: 100%;
         margin-bottom: 15px;
-        input {
-          width: 100%;
 
-        }
+      }
+    }
+    @media all and (max-width: 390px){
+      input, .link-btn {
+        width: 100%;
+
       }
     }
   }
