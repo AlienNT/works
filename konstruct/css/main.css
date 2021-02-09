@@ -4,7 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@import url(fonts.css);
 * {
   margin: 0;
   padding: 0;
@@ -240,7 +239,8 @@ b, li > a:hover, .scroll-down:hover {
   display: flex; }
   @media all and (max-width: 520px) {
     .screen-1 {
-      padding-top: 105px; } }
+      padding-top: 105px;
+      background-attachment: unset; } }
   .screen-1 .container {
     display: -webkit-box;
     display: -ms-flexbox;
